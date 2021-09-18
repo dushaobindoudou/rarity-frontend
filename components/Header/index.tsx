@@ -6,6 +6,7 @@ import { useETHBalances } from '../../state/wallet/hooks'
 import LangSwitcher from '../LanguageSwitch'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
+import Link from 'next/link';
 
 function AppBar(): JSX.Element {
     const { i18n } = useLingui()
@@ -22,36 +23,38 @@ function AppBar(): JSX.Element {
                         <div className="px-4 py-4">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center z-10">
-                                    <a href="/" className="uppercase text-center tracking-widest text-xl ">
-                                        <h1>RARITY</h1>
-                                        <h1>Adventure</h1>
-                                    </a>
+                                    <Link href="/">
+                                        <a className="uppercase text-center tracking-widest text-xl ">
+                                            <h1>RARITY</h1>
+                                            <h1>Adventure</h1>
+                                        </a>
+                                    </Link>
                                     <div className="hidden md:block sm:ml-2">
                                         <div className="flex uppercase">
-                                            <a
-                                                href="/play"
-                                                className="hover:border-white border-transparent border-2 rounded-xl py-1 px-2 mx-1"
-                                            >
-                                                <h2>{i18n._(t`Play`)}</h2>
-                                            </a>
-                                            <a
-                                                href="/analytics"
-                                                className="hover:border-white border-transparent border-2 rounded-xl py-1 px-2 mx-1"
-                                            >
-                                                <h2>{i18n._(t`Analytics`)}</h2>
-                                            </a>
-                                            <a
-                                                href="https://names.rarity.game"
-                                                className="hover:border-white border-transparent border-2 rounded-xl py-1 px-2 mx-1"
-                                            >
-                                                <h2>{i18n._(t`Names shop`)}</h2>
-                                            </a>
-                                            <a
-                                                href="https://ftmscan.com/address/0x5eC86d4d826bF3e12Ee2486B9dF01d7CFa99B6Ca"
-                                                className="border-contrast border-transparent border-2 rounded-xl py-1 px-2 mx-1"
-                                            >
-                                                <h2>{i18n._(t`Donate`)}</h2>
-                                            </a>
+                                            <Link href="/play" >
+                                                <a className="hover:border-white border-transparent border-2 rounded-xl py-1 px-2 mx-1">
+                                                    <h2>{i18n._(t`Play`)}</h2>
+                                                </a>
+                                            </Link>
+                                            <Link  href="/analytics">
+                                                <a
+                                                    className="hover:border-white border-transparent border-2 rounded-xl py-1 px-2 mx-1"
+                                                >
+                                                    <h2>{i18n._(t`Analytics`)}</h2>
+                                                </a>
+                                            </Link>
+                                            <Link href="https://names.rarity.game" >
+                                                <a className="hover:border-white border-transparent border-2 rounded-xl py-1 px-2 mx-1">
+                                                    <h2>{i18n._(t`Names shop`)}</h2>
+                                                </a>
+                                            </Link>
+                                            <Link href="https://ftmscan.com/address/0x5eC86d4d826bF3e12Ee2486B9dF01d7CFa99B6Ca">
+                                                <a
+                                                    className="border-contrast border-transparent border-2 rounded-xl py-1 px-2 mx-1"
+                                                >
+                                                    <h2>{i18n._(t`Donate`)}</h2>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <LangSwitcher />
