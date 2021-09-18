@@ -26,7 +26,7 @@ function InventoryProfile({ summoner }: SkillProfileProps): JSX.Element {
             </div>
             <div className="border-white border-2 rounded-b-2xl my-3 bg-background-cards w-full bg-card-content">
                 <div className="grid grid-cols-1 w-full px-2 md:mt-1 divide-white divide-y-2 overflow-scroll overflow-hidden h-60">
-                    <h1 className="uppercase mt-10 mx-auto text-2xl">Coming Soon</h1>
+                    <h1 className="uppercase mt-10 mx-auto text-2xl">{i18n._(t`Coming Soon`)}</h1>
                 </div>
             </div>
         </div>

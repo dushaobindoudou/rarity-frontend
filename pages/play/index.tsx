@@ -400,7 +400,7 @@ export default function Profile(): JSX.Element {
                                                                                     {i18n._(t`level up`)}
                                                                                 </h2>
                                                                                 <h2 className="mt-1 text-center text-xs">
-                                                                                    Summoners available for level up
+                                                                                    {i18n._(t`Summoners available for level up`)}
                                                                                 </h2>
                                                                                 {summonersForLevel.length > 0 ? (
                                                                                     <div className="text-center">
@@ -443,7 +443,7 @@ export default function Profile(): JSX.Element {
                                                                                     {i18n._(t`claim gold`)}
                                                                                 </h2>
                                                                                 <h2 className="mt-1 text-center text-xs">
-                                                                                    Summoners available for claim gold
+                                                                                    {i18n._(t`Summoners available for claim gold`)}
                                                                                 </h2>
                                                                                 {summonersForClaim.length > 0 ? (
                                                                                     <div className="text-center">
@@ -473,7 +473,7 @@ export default function Profile(): JSX.Element {
                                                                                     {i18n._(t`dungeons`)}
                                                                                 </h2>
                                                                                 <h2 className="mt-1 text-center text-xs">
-                                                                                    Summoners available for dungeons
+                                                                                    {i18n._(t` Summoners available for dungeons`)}
                                                                                 </h2>
                                                                                 {summonersForDungeon.length > 0 ? (
                                                                                     <div className="text-center">
@@ -691,7 +691,7 @@ export default function Profile(): JSX.Element {
                                                                 <div>
                                                                     <h2 className="text-lg">{i18n._(t`dungeons`)}</h2>
                                                                     <h2 className="mt-1 text-center text-xs">
-                                                                        Summoners available for dungeons
+                                                                        {i18n._(t`Summoners available for level up`)}
                                                                     </h2>
                                                                     {summonersForDungeon.length > 0 ? (
                                                                         <div className="text-center">
