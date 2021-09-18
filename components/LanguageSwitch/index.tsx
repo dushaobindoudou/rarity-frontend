@@ -7,6 +7,7 @@ import { classNames } from '../../functions/classNames'
 
 const LANG_TO_COUNTRY = {
     en: 'English',
+    zh: '中文',
     es: 'Spanish',
 }
 
