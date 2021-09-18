@@ -97,6 +97,7 @@
   "str": "力量",
   "summoner daily care": "英雄日常护理",
   "summoners": "英雄",
+  "Summoners": "英雄",
   "summoners available for adventure": "可以冒险的英雄",
   "total summoners": "英雄总量",
   "transfer": "赠送",
@@ -109,5 +110,12 @@
   "Summoners available for claim gold": "可以领取金币的英雄",
   "Summoners available for dungeons": "可以去地牢的英雄",
   "Summoners available for level up": "可以升级的英雄",
-  "Coming Soon": "马上可用"
+  "Coming Soon": "马上可用",
+  "dungeon": "地牢",
+  "one-click": "一键操作",
+  "level-up": "升级",
+  "delete": "删除",
+  "not available": "不可用",
+  "names": "名字",
+  "market": "市场"
 }
