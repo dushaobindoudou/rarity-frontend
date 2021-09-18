@@ -6,11 +6,7 @@ import { useETHBalances } from '../../state/wallet/hooks'
 import LangSwitcher from '../LanguageSwitch'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-<<<<<<< HEAD
-import Link from 'next/link';
-=======
 import Link from 'next/link'
->>>>>>> 999a7f439a7e9ee620ae2cf4f86a9f5a6a92263a
 
 function AppBar(): JSX.Element {
     const { i18n } = useLingui()
